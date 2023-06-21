@@ -17,8 +17,7 @@ public class AccountPage extends Base {
     }
 
     public boolean verifyAccountPage(){
-        boolean status = accountBreadcrumb.isDisplayed();
-        return status;
+        return accountBreadcrumb.isDisplayed();
     }
 
     public CameraPage navigateToCameraPage(){

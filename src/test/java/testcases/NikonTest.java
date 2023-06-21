@@ -1,19 +1,20 @@
 package testcases;
 
 import base.Base;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageobjects.*;
 
 public class NikonTest extends Base {
 
-    IndexPage indexPage;
-    LoginPage loginPage;
+    private IndexPage indexPage;
+    private LoginPage loginPage;
     private AccountPage accountPage;
     private CameraPage cameraPage;
     private NikonPage nikonPage;
 
     @Test
-    public void testAddToCartNikon(){
+    public void testAddToCartNikon() {
         indexPage = new IndexPage();
         indexPage.clickMyAccount();
         loginPage= indexPage.clickLogin();

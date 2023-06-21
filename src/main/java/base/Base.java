@@ -77,6 +77,7 @@ public class Base {
             driver = new FirefoxDriver();
         }
         driver.manage().window().maximize(); // maximizes the browser window
+        driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // driver will wait for a certain amount of time trying to find an element, before throwing an exception
 
         // manage the timeout duration for web pages that may take longer to load due to various factors such as network latency, heavy page content, or slow server response
